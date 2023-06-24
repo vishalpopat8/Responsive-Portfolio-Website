@@ -1,0 +1,642 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+header img {
+    height: 100vh;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+.logo {
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+span {
+    color: #779ac2;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+nav ul li a:hover {
+    color: #779ac2;
+    transition: 0.4s;
+}
+
+nav ul li a:active {
+    color: #374554;
+}
+
+footer nav ul li a:visited {
+    color: #116ed2;
+}
+
+.start_btn {
+    background-color: #779ac2;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    transition: transform 0.4s;
+}
+
+.start_btn:hover {
+    transform: scale(1.2);
+}
+
+.content {
+    background-color: black;
+    display: flex;
+    margin-left: 20vh;
+    flex-direction: column;
+}
+
+.content h1 {
+    color: white;
+    margin: 20px 0px 20px;
+    font-size: 75px;
+}
+
+.content h3 {
+    color: white;
+    margin-bottom: 50px;
+    font-size: 25px;
+}
+
+.content h4 {
+    color: #779ac2;
+    letter-spacing: 2px;
+    font-size: 20px;
+}
+
+.newsletter form {
+    width: 380px;
+    max-width: 100%;
+    position: relative;
+}
+
+.newsletter form input:first-child {
+    display: inline-block;
+    width: 100%;
+    padding: 14px 130px 14px 15px;
+    border: 2px solid #779ac2;
+    outline: none;
+    border-radius: 30px;
+}
+
+.newsletter form input:first-child:focus {
+    background-color: #b8cde5;
+}
+
+.newsletter form input:last-child {
+    position: absolute;
+    display: inline-block;
+    outline: none;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: #779ac2;
+    color: white;
+    box-shadow: 0px 0px 5px #000, 0px 0px 15px #779ac2;
+    top: 6px;
+    right: 6px;
+}
+
+footer {
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 0px 0px;
+    padding: 10px;
+    background-color: #181c21;
+}
+
+footer nav {
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+}
+
+/* about page css */
+
+section {
+    margin: 3em;
+}
+
+.myBio {
+    display: flex;
+    flex-direction: column;
+}
+
+.myBio h1,
+.languages h1,
+.projects h1,
+.socials h1 {
+    text-align: center;
+    font-size: xx-large;
+    margin: 2vw;
+}
+
+p {
+    margin: 1em;
+    letter-spacing: 1.5px;
+}
+
+.myLanguages {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#php {
+    background-image: url(../IMAGES/php.png);
+    filter: grayscale(100%);
+    height: 100px;
+    width: 190px;
+    background-size: cover;
+    margin: 1rem;
+    transition: transform 0.3s;
+}
+
+#php:hover {
+    filter: unset;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#laravel {
+    background-image: url(../IMAGES/laravel.png);
+    filter: grayscale(100%);
+    height: 100px;
+    width: 97px;
+    background-size: cover;
+    margin: 1rem;
+    transition: transform 0.3s;
+}
+
+#laravel:hover {
+    filter: unset;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#js {
+    background-image: url(../IMAGES/js.png);
+    filter: grayscale(100%);
+    height: 100px;
+    width: 100px;
+    background-size: cover;
+    margin: 1rem;
+    transition: transform 0.3s;
+}
+
+#js:hover {
+    filter: unset;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#html {
+    background-image: url(../IMAGES/html.png);
+    filter: grayscale(100%);
+    height: 100px;
+    width: 88px;
+    background-size: cover;
+    margin: 1rem;
+    transition: transform 0.3s;
+}
+
+#html:hover {
+    filter: unset;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#css {
+    background-image: url(../IMAGES/css.png);
+    filter: grayscale(100%);
+    height: 100px;
+    width: 97px;
+    background-size: cover;
+    margin: 1rem;
+    transition: transform 0.3s;
+}
+
+#css:hover {
+    filter: unset;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#wordpress {
+    background-image: url(../IMAGES/wordpress.png);
+    filter: grayscale(100%);
+    height: 100px;
+    width: 97px;
+    background-size: cover;
+    margin: 1rem;
+    transition: transform 0.3s;
+}
+
+#wordpress:hover {
+    filter: unset;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#mysql {
+    background-image: url(../IMAGES/mysql.png);
+    filter: grayscale(100%);
+    height: 100px;
+    width: 97px;
+    background-size: cover;
+    margin: 1rem;
+    transition: transform 0.3s;
+}
+
+#mysql:hover {
+    filter: unset;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+#react {
+    background-image: url(../IMAGES/react.png);
+    filter: grayscale(100%);
+    height: 100px;
+    width: 97px;
+    background-size: cover;
+    margin: 1rem;
+    transition: transform 0.3s;
+}
+
+#react:hover {
+    filter: unset;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+aside {
+    margin: 1em;
+    letter-spacing: 1.5px;
+}
+
+.library,
+.codeCanyon {
+    display: flex;
+    padding: 3rem;
+}
+
+.import {
+    display: flex;
+    padding: 3rem;
+    flex-direction: row-reverse;
+}
+
+.library img,
+.import img,
+.codeCanyon img {
+    width: 50%;
+    height: auto;
+    border-radius: 15px;
+}
+
+article h2 {
+    margin: 1rem;
+}
+
+article p {
+    line-height: 35px;
+}
+
+.mysocials {
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+}
+
+.mysocials a {
+    transition: transform 0.6s;
+}
+
+.mysocials a:hover {
+    transform: scale(1.1);
+}
+
+#fb {
+    display: block;
+    background-image: url(../IMAGES/fb.png);
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+}
+
+#instagram {
+    display: block;
+    background-image: url(../IMAGES/instagram.png);
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+}
+
+#twitter {
+    display: block;
+    background-image: url(../IMAGES/twitter.png);
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+}
+
+#linkedin {
+    display: block;
+    background-image: url(../IMAGES/linkedin.png);
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+}
+
+#github {
+    display: block;
+    background-image: url(../IMAGES/github.png);
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+}
+
+.resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0rem;
+}
+
+.resume a button {
+    background-color: #779ac2;
+    border: none;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 600;
+    border: 1px solid black;
+}
+
+.resume a button:hover {
+    background-color: #000;
+    border: 1px solid white;
+    color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* topic page css */
+
+.fullstack-heading {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+summary {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.skills-figures {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 2em 0;
+}
+
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+figure img:hover {
+    transform: translate3d(0, -8px, 0);
+    opacity: 0.5;
+}
+
+iframe {
+    margin: 2rem 0;
+    height: 80vh;
+    width: 100%;
+}
+
+.videos {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2rem 0;
+}
+
+.videos video {
+    height: auto;
+    max-width: 100%;
+    margin: 2rem;
+}
+
+/* responsive home page */
+
+@media screen and (max-width: 850px) {
+    header img {
+        height: auto;
+    }
+
+    .start_btn {
+        display: none;
+    }
+
+    .content {
+        align-items: center;
+        margin: unset;
+    }
+
+    section {
+        margin: 2rem 1rem;
+    }
+
+    .library,
+    .import,
+    .codeCanyon {
+        flex-direction: column;
+        padding: unset;
+        margin: 1rem 0rem;
+    }
+
+    .library img,
+    .import img,
+    .codeCanyon img {
+        width: 100%;
+        height: auto;
+    }
+
+    .mysocials {
+        padding: 2rem 0;
+    }
+
+    .videos {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .videos video {
+        width: 100%;
+        margin: unset;
+    }
+    iframe {
+        height: 30vh;
+    }
+    .skills-figures{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .start_btn {
+        display: none;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav ul li {
+        margin: 10px;
+    }
+
+    .content h4 {
+        font-size: 15px;
+    }
+
+    .content h1 {
+        font-size: 40px;
+    }
+
+    .content h3 {
+        font-size: 20px;
+    }
+
+    .newsletter form {
+        height: auto;
+        width: auto;
+    }
+
+    section {
+        margin: 2rem 1rem;
+    }
+
+    .library,
+    .import,
+    .codeCanyon {
+        flex-direction: column;
+        padding: unset;
+        margin: 1rem 0rem;
+    }
+
+    .library img,
+    .import img,
+    .codeCanyon img {
+        width: 100%;
+        height: auto;
+    }
+
+    .mysocials {
+        padding: 2rem 0;
+    }
+
+    .fullstack-heading {
+        font-size: x-large;
+    }
+
+    summary,
+    .skills h1 {
+        font-size: large;
+    }
+
+    p {
+        font-size: small;
+    }
+
+    .skills-figures {
+        display: flex;
+        flex-direction: column;
+    }
+
+    iframe {
+        height: auto;
+    }
+
+    .videos {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+}
+
+/* I got all the in the background-image element from pngwing.com */
+/* https://www.pngwing.com/ */
+
+/* New Styles Added are:
+letter-spacing
+box-shadow
+transition
+list-style-type
+text-transform
+cursor
+filter 
+
+I learned this styles from a youtube course which I pursued.
+*/
