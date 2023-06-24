@@ -308,6 +308,7 @@ p {
     background-size: cover;
     margin: 1rem;
     transition: transform 0.3s;
+    -webkit-filter: grayscale(100%);
 }
 
 #react:hover {
