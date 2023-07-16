@@ -1,3 +1,7 @@
+/* This Page has been tested on both Chrome and Firefox 
+    and everything is working perfectly and same on both browsers
+*/
+
 * {
     margin: 0;
     padding: 0;
@@ -9,6 +13,7 @@ body {
     background-color: black;
     color: white;
 }
+
 
 /* Header css
 ------------------------------------*/
@@ -88,7 +93,6 @@ footer nav ul li a:visited {
 main {
     display: flex;
     flex-direction: column;
-
 }
 
 .fullstack-heading {
@@ -226,13 +230,16 @@ main section:last-child {
         margin: 10px;
         text-align: center;
     }
+
     section {
         margin: 2rem 1rem;
         margin-top: 0;
     }
+
     .fullstack-heading {
         font-size: x-large;
     }
+
     summary,
     .skills h1 {
         font-size: large;
@@ -244,6 +251,7 @@ main section:last-child {
 
     .skills-figures {
         display: flex;
+        /* Reordering elements to display in a column */
         flex-direction: column;
     }
 
