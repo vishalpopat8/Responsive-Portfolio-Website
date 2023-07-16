@@ -24,6 +24,10 @@ nav {
     padding-right: 8%;
 }
 
+nav ul {
+    white-space: nowrap;
+}
+
 nav a {
     text-decoration: none;
 }
@@ -157,8 +161,8 @@ footer nav {
     padding: 10px;
 }
 
-/* about page css */
-
+/* about page css
+------------------------------------*/
 section {
     margin: 3em;
 }
@@ -434,8 +438,8 @@ article p {
     cursor: pointer;
 }
 
-/* topic page css */
-
+/* topic page css
+------------------------------------*/
 .fullstack-heading {
     text-align: center;
     margin: 2rem 0;
@@ -483,8 +487,9 @@ iframe {
     margin: 2rem;
 }
 
-/* responsive home page */
 
+/* responsive home page
+------------------------------------*/
 @media screen and (max-width: 850px) {
     header img {
         height: auto;
@@ -532,10 +537,12 @@ iframe {
         width: 100%;
         margin: unset;
     }
+
     iframe {
         height: 30vh;
     }
-    .skills-figures{
+
+    .skills-figures {
         grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -556,6 +563,7 @@ iframe {
 
     nav ul li {
         margin: 10px;
+        text-align: center;
     }
 
     .content h4 {
