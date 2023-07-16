@@ -1,0 +1,263 @@
+/* This Page has been tested on both Chrome and Firefox 
+    and everything is working perfectly and same on both browsers
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+/* Header css
+------------------------------------*/
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-top: 30px;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+nav ul {
+    /* FlexBox inside grid */
+    display: flex;
+}
+
+.nav-links li {
+    list-style-type: none;
+    padding: 10px 25px;
+    white-space: nowrap;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.logo {
+    color: white;
+    font-size: 35px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.start_btn {
+    background-color: #779ac2;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 10px 25px;
+    border-radius: 30px;
+    width: fit-content;
+    transition: transform 0.4s;
+    justify-self: end;
+    height: fit-content;
+}
+
+.start_btn:hover {
+    transform: scale(1.2);
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+span {
+    color: #779ac2;
+}
+
+nav ul li a:hover {
+    color: #779ac2;
+    transition: 0.4s;
+}
+
+nav ul li a:active {
+    color: #374554;
+}
+
+footer nav ul li a:visited {
+    color: #116ed2;
+}
+
+/* Main css
+------------------------------------*/
+main {
+    display: grid;
+    grid-auto-rows: auto;
+}
+
+.fullstack-heading {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+section {
+    margin: 3em;
+    margin-top: 0;
+}
+
+summary {
+    font-size: x-large;
+    font-weight: bold;
+}
+
+p {
+    margin: 1em;
+    letter-spacing: 1.5px;
+}
+
+.skills-figures {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 2em 0;
+}
+
+.skill-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: all 0.5s;
+}
+
+.skill-content img:hover {
+    transform: translate3d(0, -8px, 0);
+    opacity: 0.5;
+}
+
+iframe {
+    margin: 2rem 0;
+    height: 80vh;
+    width: 100%;
+}
+
+.videos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.videos video {
+    height: auto;
+    max-width: 100%;
+    margin: 2rem;
+}
+
+footer {
+    color: white;
+    display: grid;
+    padding: 10px;
+    background-color: #181c21;
+    place-items: center;
+}
+
+footer nav {
+    color: white;
+    display: grid;
+    grid-template-columns: unset;
+    margin: 10px;
+    padding: 10px;
+}
+
+main section:last-child {
+    margin-bottom: 0;
+}
+
+/* Responsive css
+------------------------------------*/
+@media screen and (max-width: 850px) {
+    header img {
+        height: auto;
+    }
+
+    .start_btn {
+        display: none;
+    }
+
+    section {
+        margin: 2rem 1rem;
+    }
+
+    .videos video {
+        width: 100%;
+        margin: unset;
+    }
+
+    iframe {
+        height: 30vh;
+    }
+
+    .skills-figures {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .start_btn {
+        display: none;
+    }
+
+    /* Reordering navbar to display in a column */
+    nav {
+        grid-template-areas: "a b c" "e f g";
+    }
+
+    nav a:first-child {
+        grid-area: b;
+        white-space: nowrap;
+    }
+
+    nav ul {
+        flex-direction: column;
+        grid-area: f;
+    }
+
+    nav ul li {
+        margin: 10px;
+        text-align: center;
+    }
+
+    section {
+        margin: 2rem 1rem;
+    }
+
+    .fullstack-heading {
+        font-size: x-large;
+    }
+
+    summary,
+    .skills h1 {
+        font-size: large;
+    }
+
+    p {
+        font-size: small;
+    }
+
+    /* Reordering skill section to display in a column */
+    .skills-figures {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    iframe {
+        height: auto;
+    }
+
+    .videos {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2em;
+    }
+}
