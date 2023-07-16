@@ -254,7 +254,7 @@ main section:last-child {
     iframe {
         height: auto;
     }
-
+    /* Reordering videos section to display in a column */
     .videos {
         display: grid;
         grid-template-columns: 1fr;
