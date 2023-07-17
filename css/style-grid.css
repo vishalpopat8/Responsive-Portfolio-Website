@@ -28,6 +28,8 @@ nav {
 nav ul {
     /* FlexBox inside grid */
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-links li {
@@ -189,6 +191,11 @@ main section:last-child {
         margin: 2rem 1rem;
     }
 
+    /* Reordering videos section to display in a column */
+    .videos {
+        grid-template-columns: unset;
+    }
+
     .videos video {
         width: 100%;
         margin: unset;
@@ -254,10 +261,9 @@ main section:last-child {
     iframe {
         height: auto;
     }
+
     /* Reordering videos section to display in a column */
     .videos {
-        display: grid;
-        grid-template-columns: 1fr;
-        gap: 2em;
+        grid-template-columns: unset;
     }
 }

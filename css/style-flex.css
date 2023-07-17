@@ -251,7 +251,7 @@ main section:last-child {
 
     .skills-figures {
         display: flex;
-        /* Reordering elements to display in a column */
+        /* Reordering skills element to display in a column */
         flex-direction: column;
     }
 
